@@ -1,0 +1,48 @@
+.myrow {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.begin {
+    padding-top: 40px;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.output {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 10px;
+    resize: none;
+}
+
+.form-control {
+    background-color: slategray;
+    border-color: #6c757d;
+    outline: none;
+    box-shadow: none;
+}
+.form-control:active, .form-control:focus {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    outline: none;
+    box-shadow: none;
+}
+
+.light {
+    background-color: whitesmoke;
+    border-color: #ced4da;
+}
+.light:active, .light:focus {
+    background-color: whitesmoke;
+    border-color: #ced4da;
+    outline: none;
+    box-shadow: none;
+}

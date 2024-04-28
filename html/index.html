@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <title>Calculator</title>
+</head>
+<body class="container-fluid bg-dark" style="color: whitesmoke">
+    <div class="row myrow">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <button class="btn btn-lg btn-dark" id="btn0" onclick="saes()">Pokreni</button>
+            <button class="btn btn-lg btn-dark" id="btn1" onclick="reset()">Obriši</button>
+        </div>
+    </div>
+    <div class="row myrow">
+        <div class="col-2 begin d-flex justify-content-center align-items-center">
+            <h5>Ulazni podaci:</h5>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Plaintext</label>
+                <input type="text" class="form-control light" id="plaintext">
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Key</label>
+                <input type="text" class="form-control light" id="key0">
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Rcon(1)</label>
+                <input type="text" class="form-control light" id="rcon1">
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Rcon(2)</label>
+                <input type="text" class="form-control light" id="rcon2">
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row myrow"></div>
+    <div class="row myrow"></div>
+    <div class="row myrow">
+        <div class="col-2 begin d-flex justify-content-center align-items-center">
+            <h5>Ključevi:</h5>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Key1</label>
+                <textarea readonly type="text" class="form-control" id="key1"></textarea>
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Key2</label>
+                <textarea readonly type="text" class="form-control" id="key2"></textarea>
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Add round key 0</label>
+                <textarea readonly type="text" class="form-control" id="add_key0"></textarea>
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row myrow">
+        <div class="col-2 begin d-flex justify-content-center align-items-center">
+            <h5>Prva runda:</h5>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Nibble substitution 1</label>
+                <textarea readonly type="text" class="form-control" id="nibble_substitution1"></textarea>
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Shift rows 1</label>
+                <textarea readonly type="text" class="form-control" id="shift_rows1"></textarea>
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Mix columns 1</label>
+                <textarea readonly type="text" class="form-control" id="mix_columns1"></textarea>
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Add round key 1</label>
+                <textarea readonly type="text" class="form-control" id="add_key1"></textarea>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row myrow">
+        <div class="col-2 begin d-flex justify-content-center align-items-center">
+            <h5>Druga runda:</h5>
+        </div>
+        <div class="col-2 ">
+            <form>
+                <label>Nibble substitution 2</label>
+                <textarea readonly type="text" class="form-control" id="nibble_substitution2"></textarea>
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Shift rows 2</label>
+                <textarea readonly type="text" class="form-control" id="shift_rows2"></textarea>
+            </form>
+        </div>
+        <div class="col-2">
+            <form>
+                <label>Add round key 2</label>
+                <textarea readonly type="text" class="form-control" id="add_key2"></textarea>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</body>
+</html>
