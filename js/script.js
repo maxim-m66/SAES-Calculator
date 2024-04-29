@@ -147,6 +147,7 @@ function saes() {
     $("#shift_rows2").val(stringify(A).join(""))
     A = add_key(A, K2)
     $("#add_key2").val(stringify(A).join(""))
+    $("#ciphertext").val(stringify(A).join(""))
 }
 
 function reset() {
